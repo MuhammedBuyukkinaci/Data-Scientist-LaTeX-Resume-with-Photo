@@ -16,7 +16,7 @@
 
 2 )Download and install [TeXstudio](https://www.texstudio.org/) from [here](https://www.texstudio.org/).
 
-# Compiler
+# Compiling with TeXstudio
 
 Compile with [LuaLaTeX](http://www.luatex.org/) or [XeLaTeX](https://en.wikipedia.org/wiki/XeTeX). After compiling, press F7 to view.
 
