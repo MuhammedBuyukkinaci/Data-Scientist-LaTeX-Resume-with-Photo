@@ -33,4 +33,4 @@ LuaLaTeX DS_tex_file.tex
 
 DS_tex_file.pdf
 ```
-![alt text](https://github.com/MuhammedBuyukkinaci/Data-Scientist-LaTeX-Resume-with-Photo/blob/master/Screenshot%20(29).png) 
+![alt text](https://github.com/MuhammedBuyukkinaci/Data-Scientist-LaTeX-Resume-with-Photo/blob/master/4_in_1.png) 
