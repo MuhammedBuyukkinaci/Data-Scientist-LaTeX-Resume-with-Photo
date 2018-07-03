@@ -12,9 +12,9 @@
 
 # Requirements
 
-1 )Install MikTex 
+1 )Download and install [MikTex](https://miktex.org/) from [here](https://miktex.org/) 
 
-2 )Install TexStudio
+2 )Download and install [TeXstudio](https://www.texstudio.org/) from [here](https://www.texstudio.org/)
 
 # Compiler
 
