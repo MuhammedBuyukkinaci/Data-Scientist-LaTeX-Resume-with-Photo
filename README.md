@@ -16,5 +16,5 @@
 
 # Compiler
 
-Compile with LuaLaTeX or XeLaTeX.
+Compile with LuaLaTeX or XeLaTeX. Then press F7 to view.
 
