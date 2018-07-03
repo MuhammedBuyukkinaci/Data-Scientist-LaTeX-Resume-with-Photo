@@ -18,7 +18,7 @@
 
 # Compiler
 
-Compile with [LuaLaTeX](http://www.luatex.org/)LuaLaTeX or [XeLaTeX](https://en.wikipedia.org/wiki/XeTeX).After compiling, press F7 to view.
+Compile with [LuaLaTeX](http://www.luatex.org/) or [XeLaTeX](https://en.wikipedia.org/wiki/XeTeX).After compiling, press F7 to view.
 
 ![alt text](https://github.com/MuhammedBuyukkinaci/Data-Scientist-LaTeX-Resume-with-Photo/blob/master/Screenshot%20(28).png) 
 
