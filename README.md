@@ -30,5 +30,7 @@ git clone https://github.com/MuhammedBuyukkinaci/Data-Scientist-LaTeX-Resume-wit
 cd ./Data-Scientist-LaTeX-Resume-with-Photo
 
 LuaLaTeX DS_tex_file.tex
+
+DS_tex_file.pdf
 ```
 ![alt text](https://github.com/MuhammedBuyukkinaci/Data-Scientist-LaTeX-Resume-with-Photo/blob/master/Screenshot%20(29).png) 
