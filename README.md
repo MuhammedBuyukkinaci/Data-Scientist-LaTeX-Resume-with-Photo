@@ -22,5 +22,10 @@ Compile with [LuaLaTeX](http://www.luatex.org/) or [XeLaTeX](https://en.wikipedi
 
 ![alt text](https://github.com/MuhammedBuyukkinaci/Data-Scientist-LaTeX-Resume-with-Photo/blob/master/Screenshot%20(28).png) 
 
+# Compiling with Terminal
 
+``` git clone https://github.com/MuhammedBuyukkinaci/Data-Scientist-LaTeX-Resume-with-Photo.git```
 
+``` cd ./Data-Scientist-LaTeX-Resume-with-Photo```
+
+``` LuaLaTeX DS_tex_file.tex```
