@@ -31,3 +31,4 @@ cd ./Data-Scientist-LaTeX-Resume-with-Photo
 
 LuaLaTeX DS_tex_file.tex
 ```
+![alt text](https://github.com/MuhammedBuyukkinaci/Data-Scientist-LaTeX-Resume-with-Photo/blob/master/Screenshot%20(29).png) 
