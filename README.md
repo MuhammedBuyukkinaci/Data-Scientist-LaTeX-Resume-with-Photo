@@ -10,6 +10,10 @@
 
 2) https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex
 
+# Pricing
+
+This project is open-source & free. If you have no experience about coding and liked this template, I can make a resume in this type for some amount of money. If you prefer this, just leave a comment in _Issues_.
+
 # Requirements
 
 1 )Download and install [MikTex](https://miktex.org/) from [here](https://miktex.org/).
