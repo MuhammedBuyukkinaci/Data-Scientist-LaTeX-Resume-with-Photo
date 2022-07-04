@@ -126,7 +126,8 @@
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
 \newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
-\newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
+\newcommand{\cvwebsite}[1]{\renewcommand{\cvwebsite}{#1}}
+\newcommand{\aboutme}[1]{\renewcommand{\givenaboutme}{  \justifying#1}} % about me
 %New------------------------------------------------
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 %New------------------------------------------------
@@ -134,6 +135,8 @@
 %New Surname
 \newcommand{\cvsurname}[1]{\renewcommand{\cvsurname}{#1}}
 \newcommand{\cvjobtitle}[1]{\renewcommand{\cvjobtitle}{#1}}
+
+\newcommand{\givenaboutme}{}         % about me
 
 
 % Command for printing the contact information icons
@@ -176,7 +179,7 @@
 
 \newcommand{\makeprofile}{
 	\begin{tikzpicture}[remember picture,overlay]
-	\node [rectangle, fill=sidecolor, anchor=north, minimum width=9.1cm, minimum height=\paperheight+1cm] (box) at (-5cm,0.5cm){};
+	\node [rectangle, fill=sidecolor, anchor=north, minimum width=9.2cm, minimum height=\paperheight+1cm] (box) at (-5cm,0.5cm){};
 	\end{tikzpicture}
 	
 	%------------------------------------------------
@@ -202,9 +205,9 @@
 		
 		{\Large\color{headercolor}\hspace{0.1mm}\cvjobtitle}
 		
+		\vspace{0.5cm}
 		%------------------------------------------------
 		
-		\vspace{4mm}
 		\renewcommand{\arraystretch}{2}
 		\begin{tabular}{p{0.4cm} @{\hskip 0.5cm}p{20cm}}
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
@@ -223,6 +226,14 @@
               $}
             & \cvsite\\}
             %& \href{http://\cvsite}{\cvsite} \\}
+      \ifthenelse{\equal{\cvwebsite}{}}{}{
+            {$
+              \begin{array}{l}
+              \hspace{-2.5mm} \huge \textnormal{\textcolor{test}{\faInternetExplorer}}
+              \end{array}
+              $}
+            % fo
+            & \href{https://\cvwebsite}{\cvwebsite} \\}
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
@@ -246,28 +257,39 @@
 		$} & \href{https://www.github.com/\cvgithub}{\cvgithub} \\
 		}   
     \end{tabular}
+    
+    
+    \vspace{0.5cm}
+    
+    % about me text
+    \profilesection{\color{headercolor}\hspace{5mm}About me}{0.0cm}
+    
+    \vspace{1.0mm}
+    
+    \givenaboutme
 
     %------------------------------------------------
-    \vspace{0.5mm}
-    \profilesection{\color{headercolor}Interests}{0.0cm}
+    \vspace{0.2mm}
+    
+    % \profilesection{\color{headercolor}Capabilities}{0.0cm}
 
-	\yetenek
+% 	\hspace{-5mm}\yetenek
         
         %------------------------------------------------
         
-        \vspace{3mm}
+%         \vspace{2mm}
        
-	 {\large \textbf{\color{headercolor}Programming Skills}} 
+% 	 {\large \textbf{\color{headercolor}Programming Skills}} 
 
-		 \programming
+% 		 \programming
 		 
-		 \vspace{5mm}
+% 		 \vspace{2mm}
 		 
-	 {\large \textbf{\color{headercolor}Languages}}
+% 	 {\large \textbf{\color{headercolor}Languages}}
 	 
-	  	\programminglanguage
-         
-        
+% 	  	\programminglanguage
+	  	
+	  	
         %\profilesection{Languages}{0.0cm} 
         
         %\languages
@@ -370,4 +392,77 @@
     % sets the opacity at which the bubble text is shown
     bubble text opacity = 1,
 }
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\grafico}[1]{\renewcommand{\grafico}{#1}}
+\newcommand{\supporti}[1]{\renewcommand{\supporti}{#1}}
+\newcommand{\settori}[1]{\renewcommand{\settori}{#1}}
+\newcommand{\testo}[1]{\renewcommand{\testo}{#1}}
+
+
+%%% Second page sidebar
+
+
+\newcommand{\makeseconda}{
+
+\begin{tikzpicture}[remember picture,overlay]
+    \node [rectangle, fill=sidecolor, anchor=north, minimum width=9.2cm, minimum height=\paperheight+1cm] (box) at (-5cm,0.5cm){};
+\end{tikzpicture}
+
+%------------------------------------------------
+
+\begin{textblock}{6}(0.55, 0.2)
+			
+		%------------------------------------------------
+
+\vspace{0.7cm}
+
+\profilesection{\color{headercolor}Capabilities}{0.0cm}
+
+\hspace{-0.1mm}\yetenek
+
+\vspace{0.7cm}
+
+{\large \textbf{\color{headercolor}Programming Skills}}
+
+\programming
+
+\vspace{0.7cm}
+
+\profilesection{\color{headercolor}Python Libraries}{0.0cm}
+
+\mllibs
+
+\vspace{0.7cm}
+
+{\large \textbf{\color{headercolor}Languages}}
+
+\programminglanguage
+
+\vspace{0.7cm}
+
+% \profilesection{\color{headercolor}Hobies}{0.0cm}
+
+% \hobies
+
+
+
+\renewcommand{\arraystretch}{1.6}
+
+
+\end{textblock}
+}
+
 

@@ -7,20 +7,49 @@
 \newcommand\yetenek{ 
 ~
 	\smartdiagram[bubble diagram]{
-        \textbf{~~~~Data~~~~}\\\textbf{~~~Science~~~},
-        \textbf{~~~~Deep~~~~}\\\textbf{~~~Learning~~~},
-        \textbf{~~Computer~~}\\\textbf{~Vision~},
-		\textbf{~~~Front-End~~~~}\\\textbf{~~Development~~},
-		\textbf{~~~~~~Devops~~~~~~~},
-        \textbf{Natural}\\\textbf{Language}\\\textbf{Processing},
-        \textbf{Statistical}\\\textbf{Learning}
+        \textbf{~~~~Data~~~~}\\\textbf{~~~~Science~~~~},
+        \textbf{~~~~Time~~~~}\\\textbf{~~~Series~~~}\\\textbf{~~~Analysis~~~},
+        \textbf{~~~Web~~~~}\\\textbf{~~Development~~},
+        \textbf{~~~~System~~~~}\\\textbf{~~~Engineering~~~},
+		\textbf{~~~~Computer~~~~}\\\textbf{~~~Vision~~~},
+        \textbf{~~Natural~~}\\\textbf{~~Language~~}\\\textbf{~~Processing~~}
     }
 }
 
+\newcommand\mllibs{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{~~~~~~~~~Data~~~~~~~~~},
+        \textbf{~~~~Pandas~~~~},
+        \textbf{~~~~Numpy~~~~},
+		\textbf{TensorFlow},
+		\textbf{~~~~~Scikit-~~~~~~}\\\textbf{~~~Learn~~~},
+		\textbf{~~~Django~~~~},
+		\textbf{~~~~PyTest~~~~},
+        \textbf{~~XGBoost~~},
+        \textbf{~~~~Lightgbm~~~~}
+    }
+}
+
+% \newcommand\hobies{ 
+% ~
+% 	\smartdiagram[bubble diagram]{
+%         \textbf{~~~~Myself~~~~},
+%         \textbf{~~~~Reading~~~~}\\\textbf{~~~Books~~~},
+%         \textbf{~~~~Travelling~~~~},
+%         \textbf{~~~~Watching~~~~}\\\textbf{~~~Movies~~~},
+%         \textbf{~~~~Trekking~~~~}
+%     }
+% }
+
+
+
+
 % Programming skill bars
-\programming{{$\textbullet$ Docker $\textbullet$ Git / 1.5}, {$\textbullet$ Unix $\textbullet$ Microsoft Office $\textbullet$ SQL / 3.0}, {$\textbullet$ Python / 5}}
+\programming{{$\textbullet$ Docker $\textbullet$ Message Brokers / 2.0}, {$\textbullet$ Microsoft Office $\textbullet$ SQL/ 3.0}, {$\textbullet$ Linux $\textbullet$ Git / 4.0}, 
+{$\textbullet$ Python / 5.5}}
 \vspace{10mm}
-\programminglanguage{{$\textbullet$ Arabic (A2) / 1.5 }, {$\textbullet$ English (C1) / 5}}
+\programminglanguage{{ Arabic (A2 - Elementary Level) / 2.5 }, { English (C1 - Professional Work Ability) / 5}, { Turkish (C2 - Native Language) / 6}}
 % Projects text
 %\vspace{15mm}
 %\languages{
@@ -41,13 +70,27 @@
 \cvlinkedin{MuhammedBuyukkinaci}
 \cvgithub{MuhammedBuyukkinaci}
 \cvnumberphone{+90 552 219 01 50} % Phone number
-\cvsite{Sariyer-Istanbul-Turkey} % Where I live.
+\cvsite{Istanbul-Turkey} % Where I live.
+\cvwebsite{muhammedbuyukkinaci.com}
 \cvmail{muhammedbuyukkinaci@gmail.com} % Email address
+
+\aboutme{
+I am a T-shaped Data Scientist who has general knowledge \& experience on different IT areas such as Web Development, Data Engineering, Testing, System Engineering, Containerization etc. I have been coding in Python for 5 years. My passion is to extract insight \& value from various data through Data Science techniques. I am not only an IT Engineer but also a life-long learner. I am able to create real-world Data Science projects in an end-to-end pipeline. I worked in different sectors like Energy, Telecommunication, Insurance and Real Estate throughout my career. \newline
+
+Speaking of my personality, I am an extrovert, open-minded \& ambitious person. I also have excellent communication skills. I am using my soft \& hard skills to be one of the best Data Scientist in the industry.
+}
+
+% .
+
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
 \makeprofile % Printing sidebar
+
+%----------------------------------------------------------------------------------------
+%	 Cover Letter
+%----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
 %	 EDUCATION
@@ -58,10 +101,14 @@
    	\twentyitem
 	    {2012 Sep}
 	    {2018 Jan}
-	    {\hspace{0.2cm}BS , Industrial Engineering\textnormal{(GPA: 2.67/4.0)}}
-	    {\href{http://www.ie.boun.edu.tr/}{\hspace{0.27cm}Boğaziçi University}}
+	    {\hspace{0.2cm}Bachelor of Science, Industrial Engineering}
+	    {\href{http://www.ie.boun.edu.tr/}{\hspace{0.27cm} \textbf{Boğaziçi University} }}
 	    {}
-	    {} 
+	    {\begin{itemize}
+			\item Taking Data Mining \& Time Series Forecasting courses as electives.
+			\item Forecasting hourly electricity consumption of a specific region using different Machine Learning Algorithms in my graduation project.
+
+		\end{itemize}} 
 \end{twenty}
 
 %----------------------------------------------------------------------------------------
@@ -71,50 +118,65 @@
 \section{Experience}
 
 \begin{twenty}
-	\twentyitem
-		{Oct 2019}
+    \twentyitem
+		{Dec 2021}
 		{Present}
 		{\hspace{0.3cm}Data Scientist}
-		{\href{https://www.urbanstat.com/}{UrbanStat}}
+		{\href{https://www.hepsiemlak.com/}{\textbf{HepsiEmlak}}}
 		{}
 		{\begin{itemize}
-			\item Creating ML based risk scores for insurance companies.
-			\item Predicting wildfires and dangerous regions in California using ML.
-			\item Carrying developed \& tested ML models into production enviroment.
-			\item Developing a churn project in P\&C branch of insurance sector from scratch.
+			\item Creating various image processing, regression \& classification projects on image data.
+			\item Using Pillow, TensorFlow and Transfer Learning models to build up projects.
+			\item Actively using Apache Kafka, RabbitMQ, Spark, Hadoop and Docker in development and Kubernetes \& Jenkins in deployments.
+		\end{itemize}}
+		\\
+	\twentyitem
+		{Oct 2019}
+		{Dec 2021}
+		{\hspace{0.3cm}Data Scientist}
+		{\href{https://www.urbanstat.com/}{\textbf{UrbanStat}}}
+		{}
+		{\begin{itemize}
+			\item Creating ML based risk scores for automobiles \& houses on behalf of insurance companies.
+			\item Predicting wildfires and dangerous regions in California \& West Coast of US using ML algorithms. Using SHAP library to present interpretable outputs.
+			\item Dockerizing developed models to be moved into production.
+			\item Developing a churn project for house policies.
+			\item Excessively using libraries of Lightgbm \& Xgboost.
 		\end{itemize}}
 		\\
 	\twentyitem
 		{Sep 2018}
 		{Oct 2019}
 		{\hspace{0.3cm}Fraud Systems Engineer}
-		{\href{https://www.turkcell.com.tr/}{Turkcell}}
+		{\href{https://www.turkcell.com.tr/}{\textbf{Turkcell}}}
 		{}
 		{\begin{itemize}
-			\item Leading a ML project that aims to predict which customers are going to object to their invoices. Trying to lower the returns that customers get from Turkcell. Dealing with a highly unbalanced problem.
-			\item Operating Fraud and Credit Control services of Turkcell.
+			\item Leading a ML project that aims to predict which customers are going to object to their invoices. Trying to lower the returns that customers get from Turkcell. Dealing with an unbalanced problem.
+			\item Monitoring Fraud and Credit Control services of Turkcell. Deploying software packages on live environment.
 		\end{itemize}}
 		\\
 	\twentyitem
 		{Apr 2018}
 		{Aug 2019}
 		{\hspace{0.3cm}Junior Data Scientist}
-		{\href{http://www.organonanalytics.com/pages/index.php}{Organon Analytics}}
+		{\href{http://www.organonanalytics.com/pages/index.php}{\textbf{Organon Analytics}}}
 		{}
 		{\begin{itemize}
-			\item Building Machine Learning models used in production. Designing dashboards for end users. Automating workflows.      
+			\item Building Machine Learning models used in production.
+			\item Designing dashboards for end users in Shiny library of R.
+			\item Automating workflows through Python scripts.
 		\end{itemize}}
 		\\
-	%\twentyitem
-    	%{Nov 2017}
-		%{Mar 2018}
-        %{\hspace{0.3cm}Freelance Coder}
-        %{\href{http://www.agbiyoinformatik.com/}{AG Bioinformatics}}
-        %{}
-        %{\begin{itemize}
-        %\item Designing and coding experiments used for EEG Analysis in    		Neuroscience via Neurobs's Presentation software by freelancing.      
-        %\end{itemize}}
-        %\\            
+	\twentyitem
+    	{Nov 2017}
+		{Mar 2018}
+        {\hspace{0.3cm}Freelance Coder}
+        {\textbf{AG Bioinformatics}}
+        {}
+        {\begin{itemize}
+        \item Designing and coding experiments used for EEG Analysis.
+        \item Actively using Python and Neurobs's Presentation Software.
+        \end{itemize}}
 \end{twenty}
 
 %----------------------------------------------------------------------------------------
@@ -131,7 +193,7 @@
 	{}
 	{
 		{\begin{itemize}
-				\item Collecting 3 silver and 2 bronze medals in competitions. Attending more than 20 competitions.
+				\item Collecting 3 silver and 2 bronze medals in competitions. Joining more than 20 competitions.
 		\end{itemize}}
 	}
 	\\
@@ -143,11 +205,25 @@
 	{}
 	{
 		{\begin{itemize}
-				\item Coming 147th in 2017 Spring ALES(Academic Personnel and Postgraduate Education Entrance Exam) among 300 thousand people.
+				\item Coming in 147th in 2017 Spring ALES(Academic Personnel and Postgraduate Education Entrance Exam) among 300 thousand people.
 		\end{itemize}}
 	}
+	\\
+	\twentyitem
+	{2012 YGS}
+	{}
+	{\hspace{0.3cm}Coming 300th in Turkey}
+	{}
+	{}
+	{\begin{itemize}
+			\item Coming in 300th in 2012 YGS(The Transition to Higher Education \newline Examination) among 1 million 860 thousand people.       
+	\end{itemize}}
 
 \end{twenty}
+
+\newpage
+
+\makeseconda % Print the sidebar
 
 %----------------------------------------------------------------------------------------
 %	 PROJECTS
@@ -155,11 +231,54 @@
 \section{Projects}
 
 \begin{twenty} % Environment for a list with descriptions
+    
+	\twentyitem
+	{Django}
+	{App}
+	{\hspace{0.3cm}\href{https://muhammedbuyukkinaci.com}{muhammedbuyukkinaci.com}}
+	{\href{https://github.com/MuhammedBuyukkinaci/muhammedbuyukkinaci.com}{\textbf{GitHub Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item A dynamic Django Application deployed on a VPS of DigitalOcean.
+				\item Using Bootstrap, JavaScript, PostgreSQL, NGINX, Gunicorn and Docker to build up the website.
+		\end{itemize}}
+	}
+	\\
+	
+	\twentyitem
+	{Time}
+	{Series}
+	{\hspace{0.3cm}Bitcoin Trading}
+	{\href{https://github.com/MuhammedBuyukkinaci/Bitcoin-Trading}{\textbf{GitHub Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Building up an LSTM model to predict price volatility on 4-hourly Bitcoin data.
+				\item Obtaining relative signal on whether to trade or not.
+		\end{itemize}}
+	}
+	\\
+	
+	\twentyitem
+	{Image}
+	{Segmentation}
+	{\hspace{0.3cm}DeText}
+	{\href{https://github.com/MuhammedBuyukkinaci/DeText}{\textbf{GitHub Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Creating an imitated dataset via printing texts on images.
+				\item Tranining a UNet model to remove texts on images via TensorFlow.
+		\end{itemize}}
+	}
+	\\
+    
 	\twentyitem
 	{Image}
 	{Classification}
-	{\hspace{0.3cm}\href{https://github.com/MuhammedBuyukkinaci/TensorFlow-Multiclass-Image-Classification-using-CNN-s}{Multiclass Image Classification With TensorFlow}}
-	{}
+	{\hspace{0.3cm}Multiclass Image Classification With TensorFlow}
+	{\href{https://github.com/MuhammedBuyukkinaci/TensorFlow-Multiclass-Image-Classification-using-CNN-s}{\textbf{GitHub Link}}}
 	{}
 	{
 		{\begin{itemize}
@@ -169,32 +288,21 @@
 	\\
 	\twentyitem
 	{Object}
-	{Detection}
-	{\hspace{0.3cm}\href{https://github.com/MuhammedBuyukkinaci/Fruit-Detector}{Fruit Detector}}
-	{}
-	{}
-	{\begin{itemize}
-			\item A TensorFlow object detection API implementation for fruits.      
-	\end{itemize}}
-	\\
-	\twentyitem
-	{Object}
 	{Localization}
-	{\hspace{0.3cm}\href{https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow}{Object Localization With TensorFlow}}
-	{}
+	{\hspace{0.3cm}Object Localization With TensorFlow}
+	{\href{https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow}{\textbf{GitHub Link}}}
 	{}
 	{
 	{\begin{itemize}
-			\item Building a multiple-headed CNN, one for regression and one for classification.\hspace{0.2cm}Training the model on a dataset of vegatables,
-			 which were scraped from the web.
+			\item Building a multiple-headed CNN, one for regression and one for classification.
 	\end{itemize} }
 	}
 	\\
 	\twentyitem
 	{Sentiment}
 	{Analysis}
-	{\hspace{0.3cm}\href{https://github.com/MuhammedBuyukkinaci/TensorFlow-Sentiment-Analysis-on-Amazon-Reviews-Data}{Sentiment Analysis On Amazon Reviews Data with TensorFlow}}
-	{}
+	{\hspace{0.3cm}Sentiment Analysis with TensorFlow}
+	{\href{https://github.com/MuhammedBuyukkinaci/TensorFlow-Sentiment-Analysis-on-Amazon-Reviews-Data}{\textbf{GitHub Link}}}
 	{}
 	{
 		{\begin{itemize}
@@ -208,4 +316,83 @@
 	
 \end{twenty}
 
-\end{document} 
+\section{Certificates}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+	{Linux}
+	{}
+	{\hspace{0.3cm}Linux A-Z™}
+	{\href{https://www.udemy.com/certificate/UC-74719d94-89af-44ba-ab2d-4299dd2ec3dd/}{\textbf{Certificate Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Completing a 10-hours Linux Course on Udemy.
+				\item Listing my notes on a GitHub Repository.
+		\end{itemize}}
+	}
+	\\
+	\twentyitem
+	{Docker}
+	{}
+	{\hspace{0.3cm}Docker A-Z™}
+	{\href{https://www.udemy.com/certificate/UC-c1ab98de-9803-452b-9166-8ef3ae797e5a/}{\textbf{Certificate Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Completing a 16-hours Docker Course on Udemy.
+				\item Putting my takeaways upto a GitHub Repository.
+		\end{itemize}}
+	}
+	\\
+	\twentyitem
+	{Big Data}
+	{}
+	{\hspace{0.3cm}Big Data A-Z™}
+	{\href{https://www.udemy.com/certificate/UC-4a851250-cc99-4a9d-8f7c-d8a32ed0a832/}{\textbf{Certificate Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Completing a 12-hours Big Data Course on Udemy.
+				\item Having a general knowledge on Apache Kafka, Hadoop, Spark and NoSQL technologies.
+				\item Listing my learnings on Github.
+		\end{itemize}}
+	}
+	\\
+
+	
+\end{twenty}
+
+% \section{References}
+
+% \begin{twenty} % Environment for a list with descriptions
+% 	\twentyitem
+% 	{Reference 1}
+% 	{}
+% 	{\hspace{0.3cm}Onur Tüfekçioğlu}
+% 	{\textbf{Senior System Engineer at Turkcell}}
+% 	{}
+% 	{
+% 		{\begin{itemize}
+% 				\item E-mail Address: tufekciogluonur@gmail.com
+% 		\end{itemize}}
+% 	}
+% 	\\
+% 	\twentyitem
+% 	{Reference 2}
+% 	{}
+% 	{\hspace{0.3cm}Fatih Öztürk}
+% 	{\textbf{Data Scientist at h2o.ai}}
+% 	{}
+% 	{
+% 		{\begin{itemize}
+% 				\item E-mail Address: fatihozturk1994@gmail.com
+% 		\end{itemize}}
+% 	}
+
+	
+% \end{twenty}
+
+
+
+\end{document}
