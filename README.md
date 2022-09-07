@@ -2,10 +2,9 @@
 
 20 Seconds CV for data scientists. It includes a photo in its sidebar.
 
-![alt text](https://github.com/MuhammedBuyukkinaci/Data-Scientist-LaTeX-Resume-with-Photo/blob/master/resume_with_photo_ss1.png) 
+![plot](./resume_with_photo_ss1.png)
 
-![alt text](https://github.com/MuhammedBuyukkinaci/Data-Scientist-LaTeX-Resume-with-Photo/blob/master/resume_with_photo_ss2.png) 
-
+![plot](./resume_with_photo_ss2.png)
 
 # References
 
