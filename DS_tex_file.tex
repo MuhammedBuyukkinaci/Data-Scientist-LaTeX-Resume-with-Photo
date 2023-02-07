@@ -4,32 +4,32 @@
 \documentclass[letterpaper]{DS_class_file} % a4paper for A4
 
 % Command for printing skill overview bubbles
-\newcommand\yetenek{ 
-~
-	\smartdiagram[bubble diagram]{
-        \textbf{~~~~Data~~~~}\\\textbf{~~~~Science~~~~},
-        \textbf{~~~~Time~~~~}\\\textbf{~~~Series~~~}\\\textbf{~~~Analysis~~~},
-        \textbf{~~~Web~~~~}\\\textbf{~~Development~~},
-        \textbf{~~~~System~~~~}\\\textbf{~~~Engineering~~~},
-		\textbf{~~~~Computer~~~~}\\\textbf{~~~Vision~~~},
-        \textbf{~~Natural~~}\\\textbf{~~Language~~}\\\textbf{~~Processing~~}
-    }
-}
-
 \newcommand\mllibs{ 
 ~
 	\smartdiagram[bubble diagram]{
-        \textbf{~~~~~~~~~Data~~~~~~~~~},
-        \textbf{~~~~Pandas~~~~},
-        \textbf{~~~~Numpy~~~~},
-		\textbf{TensorFlow},
-		\textbf{~~~~~Scikit-~~~~~~}\\\textbf{~~~Learn~~~},
-		\textbf{~~~Django~~~~},
-		\textbf{~~~~PyTest~~~~},
-        \textbf{~~Xgboost~~},
-        \textbf{~~~~Lightgbm~~~~}
+        \textbf{~~~~~~~Data~~~~~~~},
+        \textbf{~~~~~PyTorch~~~~~},
+        \textbf{~~~~XGBoost~~~~},
+        \textbf{~~~~LightGBM~~~~},
+		\textbf{~~~~~Scikit~~~~~~}\\\textbf{~~~Learn~~~},
+		\textbf{~~~~MLFlow~~~~}
     }
 }
+
+\newcommand\pythonlibs{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{~~~~~~Python~~~~~~},
+        \textbf{~~~~~FastAPI~~~~~},
+        \textbf{~~~~~PyTest~~~~~},
+        \textbf{~~~~~Hydra~~~~},
+        \textbf{~~~~~Requests~~~~},
+        \textbf{~~~~~Django~~~~},
+        \textbf{~CookieCutter~}
+    }
+}
+
+
 
 % \newcommand\hobies{ 
 % ~
@@ -46,8 +46,8 @@
 
 
 % Programming skill bars
-\programming{{$\textbullet$ Docker $\textbullet$ Message Brokers / 2.0}, {$\textbullet$ Microsoft Office $\textbullet$ SQL/ 3.0}, {$\textbullet$ Linux $\textbullet$ Git / 4.0}, 
-{$\textbullet$ Python / 5.5}}
+\programming{{$\textbullet$ AWS $\textbullet$ Airflow $\textbullet$ Big Data / 2.0}, {$\textbullet$ Microsoft Office $\textbullet$ Docker  $\textbullet$ SQL/ 3.0}, {$\textbullet$ Linux $\textbullet$ Git / 4.0}, 
+{$\textbullet$ Python / 6.0}}
 \vspace{10mm}
 \programminglanguage{{ Arabic (A2 - Elementary Level) / 2.5 }, { English (C1 - Professional Work Ability) / 5}, { Turkish (C2 - Native Language) / 6}}
 % Projects text
@@ -75,7 +75,7 @@
 \cvmail{muhammedbuyukkinaci@gmail.com} % Email address
 
 \aboutme{
-I am a T-shaped Data Scientist who has general knowledge \& experience on different IT areas such as Web Development, Data Engineering, Testing, System Engineering, Containerization etc. I have been coding in Python more than 5 years. My passion is to extract insight \& value from various data through Data Science techniques. I am not only an IT Engineer but also a life-long learner. I am able to create real-world Data Science projects in an end-to-end pipeline. I worked in different sectors such as Energy, Telecommunication, Insurance and Real Estate throughout my career. \newline
+I am a T-shaped Data Scientist who has general knowledge \& experience on different IT areas such as Web Development, Data Engineering, Testing, System Engineering, Containerization etc. I have been coding in Python more than 5 years. My passion is to extract insight \& value through Data Science techniques. I am not only an IT Engineer but also a life-long learner. I am able to create real-world Data Science projects in an end-to-end pipeline. I am trying to follow and implement SOLID principles as much as possible. I am also trying to integrate MLOps practices into my job.
 
 Speaking of my personality, I am an extrovert, open-minded \& ambitious person. I also have excellent communication skills. I am using my soft \& hard skills to be one of the best Data Scientists in the industry.
 }
@@ -125,8 +125,9 @@ Speaking of my personality, I am an extrovert, open-minded \& ambitious person. 
 		{\href{https://www.hepsiemlak.com/}{\textbf{HepsiEmlak}}}
 		{}
 		{\begin{itemize}
-			\item Creating various image processing, regression \& classification projects on image data.
-			\item Using Pillow, TensorFlow and Transfer Learning models to build up projects.
+			\item Creating various image processing, regression, segmentation \& classification projects on image data.
+			\item Using Pillow, PyTorch and Transfer Learning models to build up projects.
+			\item Predicting realty prices (known as Automated Valuation Model) using Machine Learning.
 			\item Actively using Apache Kafka, RabbitMQ, Spark, Hadoop and Docker in development and Kubernetes \& Jenkins in deployments.
 		\end{itemize}}
 		\\
@@ -137,7 +138,7 @@ Speaking of my personality, I am an extrovert, open-minded \& ambitious person. 
 		{\href{https://www.urbanstat.com/}{\textbf{UrbanStat}}}
 		{}
 		{\begin{itemize}
-			\item Creating ML based risk scores for automobiles \& houses on for the use of insurance companies.
+			\item Creating ML based risk scores for automobiles \& houses for the use of insurance companies.
 			\item Predicting wildfires and dangerous regions in California \& West Coast of US using ML algorithms. Using SHAP library to present interpretable outputs.
 			\item Dockerizing developed models to be moved into production.
 			\item Developing a churn project for house policies.
@@ -162,7 +163,6 @@ Speaking of my personality, I am an extrovert, open-minded \& ambitious person. 
 		{\href{http://www.organonanalytics.com/pages/index.php}{\textbf{Organon Analytics}}}
 		{}
 		{\begin{itemize}
-			\item Building Machine Learning models used in production.
 			\item Designing dashboards for end users in Shiny library of R.
 			\item Automating workflows through Python scripts.
 		\end{itemize}}
@@ -180,9 +180,9 @@ Speaking of my personality, I am an extrovert, open-minded \& ambitious person. 
 \end{twenty}
 
 %----------------------------------------------------------------------------------------
-%	 ACCOMPLLISHMENTS
+%	 Achievements
 %----------------------------------------------------------------------------------------
-\section{Accomplishments}
+\section{Achievements}
 
 \begin{twenty} % Environment for a list with descriptions
 	\twentyitem
@@ -285,33 +285,32 @@ Speaking of my personality, I am an extrovert, open-minded \& ambitious person. 
 				\item Training a CNN (AlexNet) on multiple classes from scratch.
 		\end{itemize}}
 	}
-	\\
-	\twentyitem
-	{Object}
-	{Localization}
-	{\hspace{0.3cm}Object Localization With TensorFlow}
-	{\href{https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow}{\textbf{GitHub Link}}}
-	{}
-	{
-	{\begin{itemize}
-			\item Building a multiple-headed CNN, one for regression and one for classification.
-	\end{itemize} }
-	}
-	\\
-	\twentyitem
-	{Sentiment}
-	{Analysis}
-	{\hspace{0.3cm}Sentiment Analysis with TensorFlow}
-	{\href{https://github.com/MuhammedBuyukkinaci/TensorFlow-Sentiment-Analysis-on-Amazon-Reviews-Data}{\textbf{GitHub Link}}}
-	{}
-	{
-		{\begin{itemize}
-				\item Solving the binary classification problem with LSTM's and GRU's.
-				\item Implementing Conv1D and Conv2D before LSTM and GRU layers.
-				\item Adding Attention layer \& BN layer before Dense layers.
-		\end{itemize}}
-	}
-	\\
+% 	\\
+% 	\twentyitem
+% 	{Object}
+% 	{Localization}
+% 	{\hspace{0.3cm}Object Localization With TensorFlow}
+% 	{\href{https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow}{\textbf{GitHub Link}}}
+% 	{}
+% 	{
+% 	{\begin{itemize}
+% 			\item Building a multiple-headed CNN, one for regression and one for classification.
+% 	\end{itemize} }
+% 	}
+% 	\twentyitem
+% 	{Sentiment}
+% 	{Analysis}
+% 	{\hspace{0.3cm}Sentiment Analysis with TensorFlow}
+% 	{\href{https://github.com/MuhammedBuyukkinaci/TensorFlow-Sentiment-Analysis-on-Amazon-Reviews-Data}{\textbf{GitHub Link}}}
+% 	{}
+% 	{
+% 		{\begin{itemize}
+% 				\item Solving the binary classification problem with LSTM's and GRU's.
+% 				\item Implementing Conv1D and Conv2D before LSTM and GRU layers.
+% 				\item Adding Attention layer \& BN layer before Dense layers.
+% 		\end{itemize}}
+% 	}
+% 	\\
 	
 	
 \end{twenty}
@@ -319,16 +318,29 @@ Speaking of my personality, I am an extrovert, open-minded \& ambitious person. 
 \section{Certificates}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem
-	{Linux}
+    \twentyitem
+	{AWS}
 	{}
-	{\hspace{0.3cm}Linux A-Z™}
-	{\href{https://www.udemy.com/certificate/UC-74719d94-89af-44ba-ab2d-4299dd2ec3dd/}{\textbf{Certificate Link}}}
+	{\hspace{0.3cm}Introduction to AWS}
+	{\href{https://www.udemy.com/certificate/UC-8773cc22-c86d-43a9-89ad-4c4e8e02aa38/}{\textbf{Certificate Link}}}
 	{}
 	{
 		{\begin{itemize}
-				\item Completing a 10-hours Linux Course on Udemy.
-				\item Listing my notes on a GitHub Repository.
+				\item Completing a 25-hours AWS Course on Udemy. Putting my notes on a Github repository.
+				\item Learning fundamentals of AWS. Having a detailed knowledge on EC2, S3, VPC, RDS and DynamoDB.
+		\end{itemize}}
+	}
+	\\
+	\twentyitem
+	{MLOps}
+	{}
+	{\hspace{0.3cm}Complete MLOPS Bootcamp}
+	{\href{https://www.udemy.com/certificate/UC-2296034a-bb96-4d35-80b5-dd956cceeeb7/}{\textbf{Certificate Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Completing a 3.5 hours MLOps course and listing my learnings on Github.
+				\item Learning useful tools for MLOps practices to improve Machine Learning Development Lifecycle.
 		\end{itemize}}
 	}
 	\\
@@ -340,8 +352,21 @@ Speaking of my personality, I am an extrovert, open-minded \& ambitious person. 
 	{}
 	{
 		{\begin{itemize}
-				\item Completing a 16-hours Docker Course on Udemy.
-				\item Putting my takeaways upto a GitHub Repository.
+				\item Completing a 16-hours Docker Course on Udemy and putting my takeaways upto a GitHub Repository.
+				\item Having a detailed knowledge on Docker.
+		\end{itemize}}
+	}
+	\\
+	\twentyitem
+	{Linux}
+	{}
+	{\hspace{0.3cm}Linux A-Z™}
+	{\href{https://www.udemy.com/certificate/UC-74719d94-89af-44ba-ab2d-4299dd2ec3dd/}{\textbf{Certificate Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Completing a 10-hours Linux Course on Udemy and listing my notes on a GitHub Repository.
+				\item Enhancing my Linux knowledge.
 		\end{itemize}}
 	}
 	\\
@@ -353,12 +378,24 @@ Speaking of my personality, I am an extrovert, open-minded \& ambitious person. 
 	{}
 	{
 		{\begin{itemize}
-				\item Completing a 12-hours Big Data Course on Udemy.
-				\item Having a general knowledge on Apache Kafka, Hadoop, Spark and other NoSQL technologies.
-				\item Listing my learnings on Github.
+				\item Completing a 12-hours Big Data Course on Udemy and listing my learnings on Github.
+				\item Having basics of Apache Kafka, Hadoop, Spark and other NoSQL technologies.
 		\end{itemize}}
 	}
 	\\
+	\twentyitem
+	{Airflow}
+	{}
+	{\hspace{0.3cm}Introduction to Apache Airflow}
+	{\href{https://www.udemy.com/certificate/UC-634f3164-fcb1-4bdf-b5b0-909134dd3252/}{\textbf{Certificate Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Completing a 2.5 hours Airflow course and listing my learnings on Github.
+				\item Comprehending basics of Airflow.
+		\end{itemize}}
+	}
+	
 
 	
 \end{twenty}
