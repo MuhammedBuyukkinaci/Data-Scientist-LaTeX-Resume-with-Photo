@@ -429,9 +429,9 @@
 
 \vspace{0.7cm}
 
-\profilesection{\color{headercolor}Capabilities}{0.0cm}
+\profilesection{\color{headercolor}ML Libraries}{0.0cm}
 
-\hspace{-0.1mm}\yetenek
+\mllibs
 
 \vspace{0.7cm}
 
@@ -443,7 +443,7 @@
 
 \profilesection{\color{headercolor}Python Libraries}{0.0cm}
 
-\mllibs
+\pythonlibs
 
 \vspace{0.7cm}
 
@@ -464,5 +464,3 @@
 
 \end{textblock}
 }
-
-
