@@ -1,0 +1,510 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[letterpaper]{DS_class_file} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\mllibs{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{~~~~~~~Data~~~~~~~},
+        \textbf{~~~~~PyTorch~~~~~},
+        \textbf{~~~~XGBoost~~~~},
+        \textbf{~~~~LightGBM~~~~},
+	\textbf{~~~~~Scikit~~~~~~}\\\textbf{~~~Learn~~~},
+	\textbf{~~TensorFlow~~}
+    }
+}
+
+\newcommand\pythonlibs{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{~~~~~~Python~~~~~~},
+        \textbf{~~~~~FastAPI~~~~~},
+        \textbf{~~~~~PyTest~~~~~},
+        \textbf{~~~~~MLFlow~~~~},
+        \textbf{~~~~~Requests~~~~},
+        \textbf{~~~~~Django~~~~},
+        \textbf{~~~Streamlit~~~}
+    }
+}
+
+
+
+% \newcommand\hobies{ 
+% ~
+% 	\smartdiagram[bubble diagram]{
+%         \textbf{~~~~Myself~~~~},
+%         \textbf{~~~~Reading~~~~}\\\textbf{~~~Books~~~},
+%         \textbf{~~~~Travelling~~~~},
+%         \textbf{~~~~Watching~~~~}\\\textbf{~~~Movies~~~},
+%         \textbf{~~~~Trekking~~~~}
+%     }
+% }
+
+
+
+
+% Programming skill bars
+\programming{{$\textbullet$ AWS $\textbullet$ Airflow $\textbullet$ Kubernetes / 2.0}, {$\textbullet$ Microsoft Office $\textbullet$ MLOps $\textbullet$ Git / 3.0}, {$\textbullet$ Linux $\textbullet$ SQL $\textbullet$ Docker  / 4.0}, 
+{$\textbullet$ Python / 6.0}}
+\vspace{10mm}
+\programminglanguage{{ Arabic (A2 - Elementary Level) / 2.5 }, { English (C1 - Professional Work Ability) / 5}, { Turkish (C2 - Native Language) / 6}}
+% Projects text
+%\vspace{15mm}
+%\languages{
+%		\textbf{English-C1}- Advanced in Listening, Reading, Writing and Speaking.\\
+%        \textbf{Arabic-A2} - Having basic knowledge about Arabic.
+%}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need onse or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+% \profilepic{mbk.jpg}% My photo is here
+\cvname{\hspace{-0.5cm}Muhammed\newline\newline} % My name.
+\cvsurname{\hspace{-0.6cm}Buyukkinaci} % My surname
+\cvjobtitle{\hspace{0.05cm}Data Scientist} % My position.
+% title/career
+
+\cvlinkedin{MuhammedBuyukkinaci}
+\cvgithub{MuhammedBuyukkinaci}
+\cvnumberphone{+90 552 219 01 50} % Phone number
+\cvsite{Istanbul-Turkey} % Where I live.
+\cvwebsite{muhammedbuyukkinaci.com}
+\cvmail{muhammedbuyukkinaci@gmail.com} % Email address
+
+% \aboutme{
+% I am a T-shaped Data Scientist who has general knowledge \& experience on different IT areas such as Machine Learning Engineering, Back-End \newline Development, Data Engineering, Testing, Amazon Web Services. I possess over 5 years of experience in Python. My passion lies in driving innovation and value through cross-functional collaboration. I adhere to Design Principles while constructing real-world Data Science projects within end-to-end \newline pipelines. I am also in the process of integrating MLOps practices into my work. Beyond these aspects, I am not just an IT Engineer but also an eager lifelong learner.
+
+% Alongside my technical expertise, I exhibit extroversion and an open-minded demeanor, coupled with excellent communication skills. I leverage both my soft and hard skills to establish myself as a leading Data Scientist in the industry.
+% }
+
+\aboutme{
+
+\justifying
+
+I am a T-shaped Data Scientist who has general knowledge and experience on different IT areas such as Machine Learning Engineering, Amazon Web Services, System Engineering, Back-End Development, Data Engineering and Software Testing. I have more than 6 years of experience in Python.
+
+\justifying
+
+My passion is to bring innovation and value through  cross-functional collaboration. I follow Design Principles to build real-world Data Science projects with end-to-end pipelines. I am also working on integrating MLOps practices into my work. Beyond these aspects, I am not only an IT Engineer but also an eager lifelong learner. 
+
+\justifying
+
+Besides my technical expertise, I am an extroverted and open-minded person with excellent communication skills. I leverage both my soft and hard skills to position myself as a leading engineer in the industry.
+}
+
+% .
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Printing sidebar
+
+%----------------------------------------------------------------------------------------
+%	 Cover Letter
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty}
+    \twentyitem
+		{Dec 2021}
+		{Present}
+		{\hspace{0.3cm}Senior Data Scientist}
+		{\href{https://www.hepsiemlak.com/}{\textbf{Hepsiemlak}}}
+		{}
+		{\begin{itemize}
+                \item Designed and implemented an ETL pipeline using Apache Airflow on Kubernetes, automating data processing from multiple sources, optimizing performance, and ensuring efficient data integration for enhanced decision-making and operational efficiency.
+                \item Developing a Hybrid Recommendation System based on Content Based Filtering and collaborative data. Finding similar listings with a Siamese Neural Network. Serving as the backbone of personalized emails, pushes and widgets.
+                \item Predicting sales and rental prices of homes using Machine Learning. Finding low-priced homes. Building up a REST API that predicts prices of homes via ML models real-timely.\newline Stack: Python, LightGBM, FastAPI, Hadoop, AWS, Docker.
+                \item Developing a watermark removal project in order to increase photo quality.\newline Stack: Python, PyTorch, Transfer Learning, RabbitMQ, Docker, AWS.
+                \item Developing an image quality scoring project to be used among different places such as filtering appropriate images, sorting images, choosing showcase image etc.
+                \newline Stack: Python, PyTorch, Transfer Learning, Kafka, Docker.
+			% \item Creating several image regression, segmentation \& classification projects on image data. \newline Stack: Python, PyTorch, Transfer Learning, RabbitMQ, Docker, AWS.
+                
+                
+		\end{itemize}}
+		\\
+	\twentyitem
+		{Oct 2019}
+		{Dec 2021}
+		{\hspace{0.3cm}Data Scientist}
+		{\href{https://www.urbanstat.com/}{\textbf{Urbanstat}}}
+		{}
+		{\begin{itemize}
+			\item Created an ML based risk scores of automobiles \& houses for the use of insurance companies. Lowered loss ratios up to 7\%. \newline Stack: Python, Flask, LightGBM, PostgreSQL, Docker.
+			\item Predicted wildfires and dangerous regions in California \& West Coast of USA using ML algorithms. Outperformed predictions of state government. Used SHAP library for interpretable outputs.
+			\item Developed an ML based churn analysis for house policies.
+		\end{itemize}}
+		\\
+	\twentyitem
+		{Sep 2018}
+		{Oct 2019}
+		{\hspace{0.3cm}Fraud Systems Engineer}
+		{\href{https://www.turkcell.com.tr/}{\textbf{Turkcell}}}
+		{}
+		{\begin{itemize}
+			\item Took part in an ML project aiming to predict which customers were going to object to their invoices. Dealt with an unbalanced problem.
+			\item Monitored Fraud \& Credit Control services of Turkcell. Managed several Physical \& Virtual Machines. Deployed software packages on live environment. Used Linux and SQL a lot.
+		\end{itemize}}
+		\\
+	\twentyitem
+		{Apr 2018}
+		{Aug 2018}
+		{\hspace{0.3cm}Junior Data Scientist}
+		{\href{http://www.organonanalytics.com/pages/index.php}{\textbf{Organon Analytics}}}
+		{}
+		{\begin{itemize}
+			\item Designed dashboards for end users via Shiny library of R.
+			\item Dealt with Customer Segmentation Analysis through Clustering.
+		\end{itemize}}
+		\\
+	% \twentyitem
+ %    	{Nov 2017}
+	% 	{Mar 2018}
+ %        {\hspace{0.3cm}Freelance Coder}
+ %        {\textbf{AG Bioinformatics}}
+ %        {}
+ %        {\begin{itemize}
+ %        \item Designed and coded experiments used for EEG Analysis.
+ %        \item Used Python and Neurobs's Presentation Software.
+ %        \end{itemize}}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+
+  %       \twentyitem
+	 %    {2018 Jan}
+	 %    {2020 Jan}
+	 %    {\hspace{0.2cm}Master of Science, Industrial Engineering}
+	 %    {\href{http://www.ie.boun.edu.tr/}{\hspace{0.27cm} \textbf{Boğaziçi University} }}
+	 %    {}
+	 %    {\begin{itemize}
+		% 	\item Dropped out.
+		% \end{itemize}} 
+  %       \\
+   	\twentyitem
+	    {2012 Sep}
+	    {2018 Jan}
+	    {\hspace{0.2cm}Bachelor of Science, Industrial Engineering}
+	    {\href{http://www.ie.boun.edu.tr/}{\hspace{0.27cm} \textbf{Boğaziçi University} }}
+	    {}
+	    {\begin{itemize}
+			\item Took Statistics, Data Mining \& Time Series Forecasting courses.
+			\item Forecasted hourly electricity consumption of a specific region using different Machine Learning Algorithms in my graduation project.
+
+		\end{itemize}} 
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 Achievements
+%----------------------------------------------------------------------------------------
+\section{Achievements}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+	{\href{https://www.kaggle.com}{Kaggle}}
+	{}
+	{\hspace{0.3cm}\href{https://www.kaggle.com/mbkinaci}{Kaggle Expert}}
+	{}
+	{}
+	{
+		{\begin{itemize}
+				\item Collected 3 silver and 2 bronze medals. Joining 20+ competitions.
+		\end{itemize}}
+	}
+	% \\
+	% \twentyitem
+	% {2017 ALES}
+	% {}
+	% {\hspace{0.3cm}Ranked 147th in Turkey}
+	% {}
+	% {}
+	% {
+	% 	{\begin{itemize}
+	% 			\item Achieved a ranking of 147th out of 300 thousand participants in the 2017 Spring ALES (Academic Personnel and Postgraduate \newline Education Entrance Exam).
+	% 	\end{itemize}}
+	% }
+	\\
+	\twentyitem
+	{2012 YGS}
+	{}
+	{\hspace{0.3cm}Ranked 300th in Turkey}
+	{}
+	{}
+	{\begin{itemize}
+			\item Attained a position of 300th among 1.86 million candidates in the 2012 YGS (The Transition to Higher Education Examination).    
+   
+	\end{itemize}}
+
+\end{twenty}
+
+\newpage
+
+\makeseconda % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Projects}
+
+\begin{twenty} % Environment for a list with descriptions
+    
+	\twentyitem
+	{Django}
+	{App}
+	{\hspace{0.3cm}\href{https://muhammedbuyukkinaci.com}{muhammedbuyukkinaci.com}}
+	{\href{https://github.com/MuhammedBuyukkinaci/muhammedbuyukkinaci.com}{\textbf{GitHub Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item A Django Application deployed on a VPS of DigitalOcean.
+				% \item Used Bootstrap, JavaScript, PostgreSQL, NGINX, Gunicorn and Docker to build up the website.
+		\end{itemize}}
+	}
+	\\
+        \twentyitem
+	{Behavioral}
+	{Economics}
+	{\hspace{0.3cm}The Effect of Costly Reporting on Coordination Behavior}
+	{}
+	{}
+	{
+		{\begin{itemize}
+                    \item A Study of Helping and Retaliation in behavioral economics.
+                    \item Developed the experiment using Python's OTree library, which is a Django wrapper. 
+                    \item Prepared the experiment for different scenarios.
+                    \item The developed project to be used in the academic research of \newline respectable professors such as Arhan Ertan, Louis Putterman and Kenju Kamei.
+		\end{itemize}}
+	}
+	\\
+        \twentyitem
+	{Ecological}
+	{Inference}
+	{\hspace{0.3cm}Unveiling The Dynamics of Vote Flows in Turkey's Elections}
+	{}
+	{}
+	{
+		{\begin{itemize}
+                    \item The project developed for a research center focusing on Social Sciences. Aimed to understand vote flows between political parties in different elections.
+                    \item Used PyEI library of Python in order to develop an ecological inference model. County-level data used to build the model.
+                    \item Had converged results with reasonable 95th percentile confidence intervals for the 2023 and 2024 elections.
+		\end{itemize}}
+	}
+	\\
+	
+	% \twentyitem
+	% {Time}
+	% {Series}
+	% {\hspace{0.3cm}Bitcoin Trading}
+	% {\href{https://github.com/MuhammedBuyukkinaci/Bitcoin-Trading}{\textbf{GitHub Link}}}
+	% {}
+	% {
+	% 	{\begin{itemize}
+	% 			\item Built up an LSTM model to predict price volatility on 4-hourly Bitcoin data.
+	% 			\item Obtained a fractional signal for trading.
+	% 	\end{itemize}}
+	% }
+	% \\
+	
+	% \twentyitem
+	% {Image}
+	% {Segmentation}
+	% {\hspace{0.3cm}DeText}
+	% {\href{https://github.com/MuhammedBuyukkinaci/DeText}{\textbf{GitHub Link}}}
+	% {}
+	% {
+	% 	{\begin{itemize}
+	% 			\item Created a simulated dataset by overlaying text on images.
+	% 			\item Trained a UNet model to remove text from images via TensorFlow.
+	% 	\end{itemize}}
+	% }
+	% \\
+    
+	% \twentyitem
+	% {Image}
+	% {Classification}
+	% {\hspace{0.3cm}Multiclass Image Classification With TensorFlow}
+	% {\href{https://github.com/MuhammedBuyukkinaci/TensorFlow-Multiclass-Image-Classification-using-CNN-s}{\textbf{GitHub Link}}}
+	% {}
+	% {
+	% 	{\begin{itemize}
+	% 			\item Training a CNN (AlexNet) on multiple classes from scratch.
+	% 	\end{itemize}}
+	% }
+% 	\\
+% 	\twentyitem
+% 	{Object}
+% 	{Localization}
+% 	{\hspace{0.3cm}Object Localization With TensorFlow}
+% 	{\href{https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow}{\textbf{GitHub Link}}}
+% 	{}
+% 	{
+% 	{\begin{itemize}
+% 			\item Building a multiple-headed CNN, one for regression and one for classification.
+% 	\end{itemize} }
+% 	}
+% 	\twentyitem
+% 	{Sentiment}
+% 	{Analysis}
+% 	{\hspace{0.3cm}Sentiment Analysis with TensorFlow}
+% 	{\href{https://github.com/MuhammedBuyukkinaci/TensorFlow-Sentiment-Analysis-on-Amazon-Reviews-Data}{\textbf{GitHub Link}}}
+% 	{}
+% 	{
+% 		{\begin{itemize}
+% 				\item Solving the binary classification problem with LSTM's and GRU's.
+% 				\item Implementing Conv1D and Conv2D before LSTM and GRU layers.
+% 				\item Adding Attention layer \& BN layer before Dense layers.
+% 		\end{itemize}}
+% 	}
+% 	\\
+	
+	
+\end{twenty}
+
+\section{Certificates}
+
+\begin{twenty} % Environment for a list with descriptions
+        \twentyitem
+	{AWS}
+	{}
+	{\hspace{0.3cm}Introduction to Amazon Web Services}
+	{\href{https://www.udemy.com/certificate/UC-8773cc22-c86d-43a9-89ad-4c4e8e02aa38/}{\textbf{Certificate Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Completed a 25-hours AWS Course on Udemy.
+				\item Learned fundamentals of AWS and services like EC2, S3, IAM, VPC, RDS, ECR, EKS and DynamoDB etc.
+		\end{itemize}}
+	}
+	\\
+
+	\twentyitem
+	{Docker}
+	{}
+	{\hspace{0.3cm}Docker A-Z™}
+	{\href{https://www.udemy.com/certificate/UC-c1ab98de-9803-452b-9166-8ef3ae797e5a/}{\textbf{Certificate Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Completed a 16-hours course on Udemy. Learned basics of Docker.
+		\end{itemize}}
+	}
+         \\
+        \twentyitem
+	{Kubernetes}
+	{}
+	{\hspace{0.3cm}Kubernetes Basics}
+	{\href{https://www.udemy.com/certificate/UC-ffd4189d-0bd4-4cde-9845-bf7c5e5bbf22/}{\textbf{Certificate Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Completed a 17-hours Kubernetes Course on Udemy.
+                    \item Learned fundamentals of Kubernetes and K8s objects such as Pod, Deployment, Service, Ingress, Cronjob etc.
+		\end{itemize}}
+	}
+	\\
+	\twentyitem
+	{MLOps}
+	{}
+	{\hspace{0.3cm}Complete MLOPS Bootcamp}
+	{\href{https://www.udemy.com/certificate/UC-2296034a-bb96-4d35-80b5-dd956cceeeb7/}{\textbf{Certificate Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Completed a 3.5 hours MLOps course.
+                    \item Learned useful tools for MLOps practices.
+		\end{itemize}}
+	}
+	\\
+	\twentyitem
+	{Linux}
+	{}
+	{\hspace{0.3cm}Linux A-Z™}
+	{\href{https://www.udemy.com/certificate/UC-74719d94-89af-44ba-ab2d-4299dd2ec3dd/}{\textbf{Certificate Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Completed a 10-hours Linux Course on Udemy.
+				\item Elevated my Linux knowledge to an advanced level.
+		\end{itemize}}
+	}
+	\\
+	\twentyitem
+	{Big Data}
+	{}
+	{\hspace{0.3cm}Big Data A-Z™}
+	{\href{https://www.udemy.com/certificate/UC-4a851250-cc99-4a9d-8f7c-d8a32ed0a832/}{\textbf{Certificate Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Completed a 12-hours Big Data Course on Udemy.
+				\item Learned basics of Apache Kafka, Apache Hive, Hadoop, Apache Spark and other NoSQL technologies.
+		\end{itemize}}
+	}
+	\\
+	\twentyitem
+	{Airflow}
+	{}
+	{\hspace{0.3cm}Introduction to Apache Airflow}
+	{\href{https://www.udemy.com/certificate/UC-634f3164-fcb1-4bdf-b5b0-909134dd3252/}{\textbf{Certificate Link}}}
+	{}
+	{
+		{\begin{itemize}
+				\item Completed a 2.5 hours Airflow course.
+                    \item Learned fundamentals of Airflow.
+		\end{itemize}}
+	}
+	
+
+	
+\end{twenty}
+
+% \section{References}
+
+% \begin{twenty} % Environment for a list with descriptions
+% 	\twentyitem
+% 	{Reference 1}
+% 	{}
+% 	{\hspace{0.3cm}Onur Tüfekçioğlu}
+% 	{\textbf{Senior System Engineer at Turkcell}}
+% 	{}
+% 	{
+% 		{\begin{itemize}
+% 				\item E-mail Address: tufekciogluonur@gmail.com
+% 		\end{itemize}}
+% 	}
+% 	\\
+% 	\twentyitem
+% 	{Reference 2}
+% 	{}
+% 	{\hspace{0.3cm}Fatih Öztürk}
+% 	{\textbf{Data Scientist at h2o.ai}}
+% 	{}
+% 	{
+% 		{\begin{itemize}
+% 				\item E-mail Address: fatihozturk1994@gmail.com
+% 		\end{itemize}}
+% 	}
+
+	
+% \end{twenty}
+
+
+
+\end{document}
